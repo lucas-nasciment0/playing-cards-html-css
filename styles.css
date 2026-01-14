@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Segoe UI, Roboto, Arial;
+  background: #0b6a6a;
+  padding: 24px;
+}
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 150px;
+  height: 220px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #222;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color: #111;
+}
+
+.left {
+  align-self: flex-start;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.1;
+}
+
+.middle {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.right {
+  align-self: flex-end;
+  text-align: right;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.rank {
+  font-size: 28px;
+}
+
+.suit {
+  font-size: 26px;
+}
+
+.hearts-king .suit,
+.hearts-king .left,
+.hearts-king .right {
+  color: #d43b3b;
+}
+
+.diamonds-queen .suit,
+.diamonds-queen .left,
+.diamonds-queen .right {
+  color: #d87b2b;
+}
+
+.spades-ace .suit,
+.spades-ace .left,
+.spades-ace .right {
+  color: #111;
+}
